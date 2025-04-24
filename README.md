@@ -1,40 +1,35 @@
-<<<<<<< HEAD
-# autohotkey-ime-scripts
-AutoHotkeyの便利なキーバインドまとめ
-=======
-# AutoHotkey キーマッピング設定
+# AutoHotkey v2 インストール手順（画像付き）
 
-このリポジトリには、日本語キーボード用のAutoHotkey v2スクリプトが含まれています。IMEの状態に関係なく、特定のキーを半角文字として入力できるようにするスクリプトです。
+## 1. 公式サイトにアクセス
 
-## 含まれるスクリプト
+AutoHotkey の公式サイトにアクセスします。
 
-1. `key_remap.ahk`
-   - 「\」キー → アンダースコア（_）
-   - Shift +「\」キー → バックスラッシュ（\）
+👉 [https://www.autohotkey.com/](https://www.autohotkey.com/)
 
-2. `key_remap_ime.ahk`
-   - IMEの状態に関係なく、常に半角で出力
-   - 「\」キー → 半角アンダースコア（_）
-   - Shift +「\」キー → 半角バックスラッシュ（\）
+## 2. 最新バージョンのダウンロード
 
-3. `key_remap_at.ahk`
-   - IMEの状態に関係なく、「@」キーを常に半角アットマーク（@）として出力
+トップページで「Download Current Version」をクリックして、最新の v2 系インストーラーをダウンロードします。
 
-4. `key_remap_numbers.ahk`
-   - IMEの状態に関係なく、数字キー（0-9）を常に半角数字として出力
+![AutoHotkey ダウンロード画面](https://ocamejp.com/wp-content/uploads/2020/12/AutoHotkey_download.jpg)
 
-## 必要条件
+## 3. インストーラーの実行
 
-- AutoHotkey v2.0以降
-- Windows OS
+ダウンロードした `AutoHotkey_2.x.x_Install.exe` をダブルクリックして実行します。
 
-## 使用方法
+インストーラーが起動したら、「Express Installation（推奨）」をクリックします。
 
-1. このリポジトリをクローンまたはダウンロード
-2. 必要なスクリプトをダブルクリックして実行
-3. スクリプトを自動起動したい場合は、Windowsのスタートアップフォルダ（`Shell:Startup`）にショートカットを配置
+![インストールオプション選択](https://ocamejp.com/wp-content/uploads/2020/12/AutoHotkey_install.jpg)
 
-## ライセンス
+## 4. インストール完了
 
-MITライセンス 
->>>>>>> c26a7d0 (初回コミット：AutoHotkey キーマッピングスクリプト)
+インストールが完了したら、「Exit」をクリックしてインストーラーを終了します。
+
+## 5. スクリプトの作成と実行
+
+### a. スクリプトファイルの作成
+
+デスクトップなどに `test.ahk` という名前のファイルを作成し
+
+### b. スクリプトの実行
+作成した test.ahk ファイルを ダブルクリックして実行 します。<br>
+メッセージボックスが表示されれば、AutoHotkey が正常に動作している ことを意味します。

@@ -7,6 +7,7 @@
 
 - 全角モードでも数字（0〜9）が**常に半角で入力される**ようになる
 - 全角モードでも記号（例：`@`, `:`, `*`, `(`, `)`）が**必ず半角で出力される**
+- `_`(アンダースコア)がshiftを押さずとも入力される 【shift押下時は`\`(バックスラッシュ)が入力される】
 - IME（日本語入力モード）に関係なく**常に半角記号・数字を入力できる**
 
 ---
@@ -53,14 +54,17 @@
 PowerShellを開き、以下を順番に実行します。
 
 ```powershell
+cd C:\Users\"自分の社員番号"\Documents\AutoHotkey
+```
+
+```powershell
+# 増田の場合
 cd C:\Users\98240\Documents\AutoHotkey
 ```
 
 ```
-git clone <クローンしたいリポジトリURL>
+git clone git@github.com:RyoyaMasuda/autohotkey-ime-scripts.git
 ```
-
-※ `<クローンしたいリポジトリURL>` には正しいリポジトリURLを入力してください。
 
 ---
 
@@ -70,9 +74,9 @@ git clone <クローンしたいリポジトリURL>
 
 | ファイル名         | 内容 |
 |:-------------------|:-----|
-| `symbols.ahk`       | 記号キー（例：<>?:"{}|）を半角で出力 |
+| `symbols.ahk`       | 記号キー（例：<>?:"!+）を半角で出力 |
 | `numbers.ahk`       | 数字キー（0〜9）を半角で出力 |
-| `special_keys.ahk`  | 日本語特有キー（@、￥、ろ、*、: など）を半角で出力 |
+| `special_keys.ahk`  | 日本語特有キー（@、*、: など）を半角で出力 |
 
 ---
 

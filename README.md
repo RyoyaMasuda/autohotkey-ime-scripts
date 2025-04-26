@@ -1,5 +1,4 @@
-
-# AutoHotkey v2 インストール＆半角化スクリプト利用ガイド（2025年最新版）
+# AutoHotkey v2 インストール＆半角化スクリプト利用ガイド
 
 ---
 
@@ -54,16 +53,32 @@
 PowerShellを開き、以下を順番に実行します。
 
 ```powershell
-cd C:\Users\"自分の社員番号"\Documents\AutoHotkey
-```
+# AutoHotkey スクリプトをAutoHotkeyフォルダに移動
+cd C:\Users\<自分の社員番号>\Documents\AutoHotkey
 
-```powershell
-# 増田の場合
-cd C:\Users\98240\Documents\AutoHotkey
-```
-
-```
+# GitHub からリポジトリをクローン（autohotkey-ime-scripts フォルダに入る）
 git clone git@github.com:RyoyaMasuda/autohotkey-ime-scripts.git
+
+# クローンされたフォルダの中身（スクリプト）を現在のフォルダ（AutoHotkey直下）に移動
+Move-Item -Path .\autohotkey-ime-scripts\* -Destination .\ -Force
+
+# 空になった autohotkey-ime-scripts フォルダを削除（片付け）
+Remove-Item -Recurse -Force .\autohotkey-ime-scripts
+```
+
+増田の場合
+```powershell
+# AutoHotkey スクリプトをAutoHotkeyフォルダに移動
+cd C:\Users\98240\Documents\AutoHotkey
+
+# GitHub からリポジトリをクローン（autohotkey-ime-scripts フォルダに入る）
+git clone git@github.com:RyoyaMasuda/autohotkey-ime-scripts.git
+
+# クローンされたフォルダの中身（スクリプト）を現在のフォルダ（AutoHotkey直下）に移動
+Move-Item -Path .\autohotkey-ime-scripts\* -Destination .\ -Force
+
+# 空になった autohotkey-ime-scripts フォルダを削除（片付け）
+Remove-Item -Recurse -Force .\autohotkey-ime-scripts
 ```
 
 ---

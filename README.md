@@ -106,7 +106,7 @@ Remove-Item -Recurse -Force .\autohotkey-ime-scripts
 
 ---
 
-### 3.4 スクリプトをPC起動時に自動起動させる（任意）
+### 3.4 スクリプトをPC起動時に自動起動させる
 
 1. 実行したい `.ahk` ファイルのショートカットを作成します。
 2. `Win + R` を押して「ファイル名を指定して実行」を開き、`shell:startup` と入力してエンター。

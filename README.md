@@ -123,7 +123,7 @@ Remove-Item -Recurse -Force .\autohotkey-ime-scripts
 - キー押下と同時に半角出力されます。
 - 各スクリプトは単独でも使用可能です。
 
-### AutoHotkeyが反映されない場合
+## ✅ 5. AutoHotkeyが反映されない場合
 原因はわかっていませんが、再起動した際にAutoHotkeyが起動しないことがあります。その際は
 - `\Users\<自分の社員番号>\Documents\AutoHotkey`に行き、各スクリプトを`ダブルクリック`or`右クリック`→`Run Script`
 - `win + R`→`shell:startup`→`Enter`→各ショートカットをダブルクリック
